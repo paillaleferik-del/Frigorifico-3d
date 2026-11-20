@@ -2,6 +2,11 @@
 <html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Frigorífico 3D · Plano</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0e1a24">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
 <style>
 :root{--fg:#10222f;--card:rgba(255,255,255,.9);--ac:#0a84c6;--bd:rgba(0,0,0,.12);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--fg:#e6f1f8;--card:rgba(20,34,46,.9);--ac:#4cc3ff;--bd:rgba(255,255,255,.18)}}
@@ -553,4 +558,6 @@ function loop(now){requestAnimationFrame(loop);const dt=Math.min((now-last)/1000
  if((ic+=dt)>.3){ic=0;info()}
  ren.render(scene,cam)}
 requestAnimationFrame(loop);
-</script></body></html>
+</script>
+<script>if('serviceWorker' in navigator&&location.protocol==='https:')addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));</script>
+</body></html>

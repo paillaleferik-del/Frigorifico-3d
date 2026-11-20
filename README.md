@@ -11,6 +11,11 @@ Plano 3D interactivo del Frigorífico La Apacheta (Tierra Amarilla) para ver y g
 - Ingreso, retiro y capacidad editable por cámara.
 - Selección múltiple y despacho animado a camiones.
 
+## Instalar en tablet o celular Android
+1. Abre el enlace en **Chrome**.
+2. Toca el menú **⋮** → **Instalar app** (o **Agregar a pantalla principal**).
+3. Queda un ícono **Frigorífico 3D**; se abre a pantalla completa y funciona sin internet después de abrirla una vez.
+
 ## Datos
 En GitHub Pages la app funciona en modo **"Solo este dispositivo"**: los datos se guardan en el navegador de cada persona y no se comparten.
 
